@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-vast",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ESLint shareable config for Vast's JavaScript coding standards",
   "main": "index.js",
   "scripts": {
@@ -30,6 +30,6 @@
     "pre-commit": "1.1.3"
   },
   "peerDependencies": {
-      "eslint": "3.2.2"
+    "eslint": "3.2.2"
   }
 }
