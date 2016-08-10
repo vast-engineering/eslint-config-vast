@@ -50,6 +50,8 @@ To add a Git pre-commit hook for ESLint, run:
 ]
 ```
 
+For real-time linting in your text editor, see [ESLint integrations for editors](http://eslint.org/docs/user-guide/integrations#editors).
+
 ## License
 
 [MIT](LICENSE) © 2016 Vast.com, Inc.
