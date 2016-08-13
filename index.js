@@ -10,7 +10,7 @@ module.exports = {
     globals: {
         logger: false
     },
-    'extends': 'eslint:recommended',
+    extends: 'eslint:recommended',
     rules: {
         // Possible Errors
         'no-console': [1, { allow: ['warn', 'error'] }], // overrides eslint:recommended config (2)
@@ -90,7 +90,7 @@ module.exports = {
         'one-var': [2, 'never'],
         'one-var-declaration-per-line': 2,
         'padded-blocks': [2, 'never'],
-        'quote-props': [2, 'as-needed', { keywords: true }],
+        'quote-props': [2, 'as-needed'],
         quotes: [2, 'single'],
         semi: 2,
         'semi-spacing': 2,
