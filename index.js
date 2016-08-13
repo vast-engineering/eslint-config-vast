@@ -37,7 +37,6 @@ module.exports = {
         'no-useless-escape': 2,
         'no-void': 2,
         yoda: 2,
-        radix: 2,
 
         // Strict Mode
         strict: 2,
