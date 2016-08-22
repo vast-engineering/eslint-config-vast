@@ -30,7 +30,7 @@ Add "eslint" to "scripts" in `package.json`:
 
 ```json
 "scripts": {
-    "eslint": "eslint 'js/**/*.js' --ignore-pattern 'js/vendor/**/*.js'"
+    "eslint": "eslint '*.js' 'js/**/*.js' --ignore-pattern 'js/vendor/**/*.js'"
 }
 ```
 
@@ -54,9 +54,13 @@ For real-time linting in your text editor, see [ESLint integrations for editors]
 
 ## Related
 
-- [eslint-config-standard](https://github.com/feross/eslint-config-standard) for [JavaScript Standard Style Guide](https://github.com/feross/standard), or [JavaScript Semi-Standard Style](https://github.com/Flet/semistandard) if you prefer writing semicolons
-- [eslint-config-airbnb-base](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base), or [eslint-config-airbnb](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb) if you are using React
-- [eslint-config-xo](https://github.com/sindresorhus/eslint-config-xo/blob/master/index.js) for [XO](https://github.com/sindresorhus/xo) (ESLint-based linter), or [eslint-config-xo-react](https://github.com/sindresorhus/eslint-config-xo-react) if you are using React
+- [eslint-config-standard](https://github.com/feross/eslint-config-standard) for [JavaScript Standard Style Guide](https://github.com/feross/standard)
+  - [eslint-config-standard-react](https://github.com/feross/eslint-config-standard-react) (if you are using React)
+  - [eslint-config-semistandard](https://github.com/Flet/semistandard) (if you prefer writing semicolons)
+- [eslint-config-airbnb-base](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base)
+  - [eslint-config-airbnb](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb) (if you are using React)
+- [eslint-config-xo](https://github.com/sindresorhus/eslint-config-xo/blob/master/index.js) for [XO](https://github.com/sindresorhus/xo) (ESLint-based linter)
+  - [eslint-config-xo-react](https://github.com/sindresorhus/eslint-config-xo-react) (if you are using React)
 
 ## License
 
