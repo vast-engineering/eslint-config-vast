@@ -61,7 +61,7 @@ module.exports = {
         'consistent-this': 2,
         curly: 2,
         'dot-notation': 2,
-        indent: 2,
+        indent: [2, 4, { SwitchCase: 1 }],
         'eol-last': 2,
         'key-spacing': 2,
         'keyword-spacing': 2,
