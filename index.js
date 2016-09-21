@@ -2,10 +2,10 @@
 
 module.exports = {
     parserOptions: {
-        ecmaVersion: 6
     },
     env: {
-        node: true
+        node: true,
+        es6: true
     },
     globals: {
         logger: false
