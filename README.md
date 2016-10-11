@@ -11,7 +11,7 @@
 
 **For server-side projects**
 
-Create `.eslintrc` file in the root of your project with the following:
+Create `.eslintrc` file in the root of your project with the following config:
 
 ```javascript
 {
@@ -24,7 +24,7 @@ Create `.eslintrc` file in the root of your project with the following:
 
 **For client-side projects**
 
-Since the default settings are for server-side, in case you want to use the config for a client-side project, or in case you want to add an additional `.stylelintrc` file in a client-side code folder (e.g. `/client/.eslintrc`), use the following:
+Since the default settings are for server-side, in case you want to use the config for a client-side project, or in case you want to add an additional `.stylelintrc` file in a client-side code folder (e.g. `/client/.eslintrc`), use the following config:
 
 ```
 {
