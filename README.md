@@ -26,7 +26,7 @@ Create `.eslintrc` file in the root of your project with the following config:
 
 Since the default settings are for server-side, in case you want to use the config for a client-side project, or in case you want to add an additional `.stylelintrc` file in a client-side code folder (e.g. `/client/.eslintrc`), use the following config:
 
-```
+```javascript
 {
     "extends": "eslint-config-vast",
     "env": {
