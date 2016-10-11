@@ -31,7 +31,6 @@ Since the default settings are for server-side, in case you want to use the conf
     "extends": "eslint-config-vast",
     "env": {
         "browser": true,
-        "node": false,
         "es6": false // if you are not using Babel on client-side
     },
     "rules": {
