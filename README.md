@@ -9,7 +9,9 @@
 
 ## Usage
 
-Create a file named `.eslintrc` in the root of your project:
+**For server-side projects**
+
+Create `.eslintrc` file in the root of your project with the following:
 
 ```javascript
 {
@@ -17,6 +19,24 @@ Create a file named `.eslintrc` in the root of your project:
   "rules": {
     // Your overrides...
   }
+}
+```
+
+**For client-side projects**
+
+Since the default settings are for server-side, in case you want to use the config for a client-side project, or in case you want to add an additional `.stylelintrc` file in a client-side code folder (e.g. `/client/.eslintrc`), use the following:
+
+```
+{
+    "extends": "eslint-config-vast",
+    "env": {
+        "browser": true,
+        "node": false,
+        "es6": false // if you are not using Babel on client-side
+    },
+    "rules": {
+        // Your overrides
+    }
 }
 ```
 
