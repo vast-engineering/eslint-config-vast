@@ -1,7 +1,7 @@
 # eslint-config-vast
 > ESLint [shareable config](http://eslint.org/docs/developer-guide/shareable-configs.html) Vast's JavaScript coding standards
 
-[![NPM version](https://badge.fury.io/js/eslint-config-vast.svg)](https://www.npmjs.org/package/eslint-config-vast)
+[![NPM version](https://badge.fury.io/js/eslint-config-vast.svg)](https://www.npmjs.org/package/eslint-config-vast) [![Dependency Status](https://david-dm.org/vast-engineering/eslint-config-vast.svg)](https://david-dm.org/vast-engineering/eslint-config-vast) [![devDependency Status](https://david-dm.org/vast-engineering/eslint-config-vast/dev-status.svg)](https://david-dm.org/vast-engineering/eslint-config-vast?type=dev) [![devDependency Status](https://david-dm.org/vast-engineering/eslint-config-vast/peer-status.svg)](https://david-dm.org/vast-engineering/eslint-config-vast?type=peer)
 
 ## Installation
 
