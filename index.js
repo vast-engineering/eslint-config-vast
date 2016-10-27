@@ -54,7 +54,10 @@ module.exports = {
         'no-use-before-define': 2,
 
         // Node.js and CommonJS
-        // TODO: Set rules for Node.js and CommonJS http://eslint.org/docs/rules/#nodejs-and-commonjs
+        'global-require': 2,
+        'no-new-require': 2,
+        'no-path-concat': 2,
+        'handle-callback-err': 1,
 
         // Stylistic Issues
         'array-bracket-spacing': [2, 'never'],
@@ -93,7 +96,7 @@ module.exports = {
         'object-curly-spacing': [2, 'always'],
         'one-var': [2, 'never'],
         'one-var-declaration-per-line': 2,
-        'padded-blocks': [2, 'never'],
+        'padded-blocks': [2, 'never'], // TODO: Add padding after blocks once `requirePaddingNewLinesAfterBlocks` gets implemented: https://github.com/eslint/eslint/issues/7356
         'quote-props': [2, 'as-needed'],
         quotes: [2, 'single'],
         semi: 2,
@@ -105,8 +108,6 @@ module.exports = {
         'space-unary-ops': [2, { words: true, nonwords: false }],
         'spaced-comment': 2,
         'wrap-iife': 2
-        // TODO: Add `requirePaddingNewLinesAfterBlocks` rule once it gets implemented
-        // since we had it in JSCS: https://github.com/eslint/eslint/issues/3092
 
         // ECMAScript 6
         // TODO: set rules for ECMAScript 6 http://eslint.org/docs/rules/#ecmascript-6
