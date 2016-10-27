@@ -52,11 +52,11 @@ If you haven’t already set up ESLint on your project, run:
 
     npm install eslint --save-dev
 
-Add "eslint" to "scripts" in `package.json`:
+Add "eslint" to "scripts" in `package.json` (wrap globstar pattern with single quotes):
 
 ```json
 "scripts": {
-    "eslint": "eslint '*.js' 'js/**/*.js' --ignore-pattern 'js/vendor/**/*.js'"
+    "eslint": "eslint js tests *.js --ignore-pattern 'js/vendor/**/*.js'"
 }
 ```
 
@@ -76,7 +76,7 @@ To add a Git pre-commit hook for ESLint, run:
 ]
 ```
 
-For real-time linting in your text editor, see [ESLint integrations for editors](http://eslint.org/docs/user-guide/integrations#editors).
+**Tip:** For real-time linting in your text editor, see [ESLint integrations for editors](http://eslint.org/docs/user-guide/integrations#editors).
 
 **Tip:** Run `eslint --fix /path/to/file.js` to [automatically fix](http://eslint.org/docs/user-guide/command-line-interface#fix) as many issues as possible.
 
