@@ -1,5 +1,5 @@
 # eslint-config-vast
-> ESLint shareable config for Vast's JavaScript coding standards
+> ESLint [shareable config](http://eslint.org/docs/developer-guide/shareable-configs.html) Vast's JavaScript coding standards
 
 [![NPM version](https://badge.fury.io/js/eslint-config-vast.svg)](https://www.npmjs.org/package/eslint-config-vast)
 
@@ -9,7 +9,7 @@
 
 ## Usage
 
-**For server-side projects**
+**For server-side (Node.js) code**
 
 Create `.eslintrc` file in the root of your project with the following config:
 
@@ -22,7 +22,7 @@ Create `.eslintrc` file in the root of your project with the following config:
 }
 ```
 
-**For client-side projects**
+**For client-side code**
 
 Since the default settings are for server-side, in case you want to use the config for a client-side project, or in case you want to add an additional `.stylelintrc` file in a client-side code folder (e.g. `/client/.eslintrc`), use the following config:
 
@@ -31,10 +31,17 @@ Since the default settings are for server-side, in case you want to use the conf
     "extends": "eslint-config-vast",
     "env": {
         "browser": true,
-        "es6": false // if you are not using Babel on client-side
+        "es6": false // if you're not using Babel
+    },
+    "parserOptions": {
+        "sourceType": "module", // if you're using Babel
+        "ecmaVersion": 8 // if you're using Babel
+    },
+    "globals": {
+            "SOME_GLOBAL": false
     },
     "rules": {
-        // Your overrides
+        // Your overrides...
     }
 }
 ```
@@ -71,17 +78,18 @@ To add a Git pre-commit hook for ESLint, run:
 
 For real-time linting in your text editor, see [ESLint integrations for editors](http://eslint.org/docs/user-guide/integrations#editors).
 
-**Tip:** You can create a personal configuration file in your home directory (`~/.eslintrc`), it will only be used if no other configuration files are found. See [Configuration Cascading and Hierarchy](http://eslint.org/docs/user-guide/configuring#configuration-cascading-and-hierarchy).
+**Tip:** Run `eslint --fix /path/to/file.js` to [automatically fix](http://eslint.org/docs/user-guide/command-line-interface#fix) as many issues as possible.
+
+**Tip:** You can create a personal configuration file in your home directory (`~/.eslintrc`), it will only be used if no other configuration files are found. See [Configuration Cascading and Hierarchy](http://eslint.org/docs/user-guide/configuring#configuration-cascading-and-hierarchy). But make sure to all install dependencies globally with `-g` flag.
 
 ## Related
 
+- [eslint-config-vast-react](https://github.com/vast-engineering/eslint-config-vast-react) for React
 - [eslint-config-standard](https://github.com/feross/eslint-config-standard) for [JavaScript Standard Style Guide](https://github.com/feross/standard)
-  - [eslint-config-standard-react](https://github.com/feross/eslint-config-standard-react) (if you are using React)
-  - [eslint-config-semistandard](https://github.com/Flet/semistandard) (if you prefer writing semicolons)
 - [eslint-config-airbnb-base](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base)
-  - [eslint-config-airbnb](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb) (if you are using React)
-- [eslint-config-xo](https://github.com/sindresorhus/eslint-config-xo/blob/master/index.js) for [XO](https://github.com/sindresorhus/xo) (ESLint-based linter)
-  - [eslint-config-xo-react](https://github.com/sindresorhus/eslint-config-xo-react) (if you are using React)
+  - [eslint-config-airbnb](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb) for React
+- [eslint-config-xo](https://github.com/sindresorhus/eslint-config-xo/) for [XO](https://github.com/sindresorhus/xo) (ESLint-based linter)
+  - [eslint-config-xo-react](https://github.com/sindresorhus/eslint-config-xo-react) for React
 
 ## License
 
