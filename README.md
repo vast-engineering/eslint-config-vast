@@ -113,7 +113,7 @@ To add a Git pre-commit hook for ESLint, run:
 
 **Tip:** For real-time linting in your text editor, see [ESLint integrations for editors](http://eslint.org/docs/user-guide/integrations#editors).
 
-**Tip:** Run `eslint --fix /path/to/file.js` to [automatically fix](http://eslint.org/docs/user-guide/command-line-interface#fix) as many issues as possible.
+**Tip:** Run `eslint --fix /path/to/file.js` to [automatically fix](http://eslint.org/docs/user-guide/command-line-interface#fix) as many issues as possible. Another way to autoformat the code is with the editor plugin, such as [ESLint-Formatter](https://packagecontrol.io/packages/ESLint-Formatter) for Sublime Text.
 
 **Tip:** You can create a personal configuration file in your home directory (`~/.eslintrc`), it will only be used if no other configuration files are found. See [Configuration Cascading and Hierarchy](http://eslint.org/docs/user-guide/configuring#configuration-cascading-and-hierarchy). But make sure to all install dependencies globally with `-g` flag.
 
