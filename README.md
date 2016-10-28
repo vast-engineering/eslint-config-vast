@@ -3,45 +3,80 @@
 
 [![NPM version](https://badge.fury.io/js/eslint-config-vast.svg)](https://www.npmjs.org/package/eslint-config-vast) [![Dependency Status](https://david-dm.org/vast-engineering/eslint-config-vast.svg)](https://david-dm.org/vast-engineering/eslint-config-vast) [![devDependency Status](https://david-dm.org/vast-engineering/eslint-config-vast/dev-status.svg)](https://david-dm.org/vast-engineering/eslint-config-vast?type=dev) [![devDependency Status](https://david-dm.org/vast-engineering/eslint-config-vast/peer-status.svg)](https://david-dm.org/vast-engineering/eslint-config-vast?type=peer)
 
+This config can be used for linting server-side and client-side JavaScript.
+
+See [eslint-config-vast-react](https://github.com/vast-engineering/eslint-config-vast-react) for some additional useful checks for React, JSX, and accessibility.
+
 ## Installation
 
     npm install eslint-config-vast --save-dev
 
 ## Usage
 
-**For server-side (Node.js) code**
+**For Node.js environment (ES6):**
 
-Create `.eslintrc` file in the root of your project with the following config:
-
-```javascript
-{
-  "extends": "eslint-config-vast",
-  "rules": {
-    // Your overrides...
-  }
-}
-```
-
-**For client-side code**
-
-Since the default settings are for server-side, in case you want to use the config for a client-side project, or in case you want to add an additional `.stylelintrc` file in a client-side code folder (e.g. `/client/.eslintrc`), use the following config:
+Create `.eslintrc` file in the root of your project with the following settings:
 
 ```javascript
 {
     "extends": "eslint-config-vast",
+    "rules": {
+        // Your overrides...
+    }
+}
+```
+
+**For browser environment with ES6/ES7/ES8 to ES5 transpiler:**
+
+Create an additional `.stylelintrc` file in a client-side code folder (e.g. `client/.eslintrc`) with the following settings:
+
+```javascript
+{
     "env": {
-        "browser": true,
-        "es6": false // if you're not using Babel
+        "browser": true
     },
     "parserOptions": {
-        "sourceType": "module", // if you're using Babel
-        "ecmaVersion": 8 // if you're using Babel
+        "sourceType": "module",
+        "ecmaVersion": 8
     },
     "globals": {
-            "SOME_GLOBAL": false
+        "GLOBAL1": false,
+        "GLOBAL2": false
     },
     "rules": {
         // Your overrides...
+    }
+}
+```
+
+> **Note:** You don't need to use babel-eslint (`"parser": "babel-eslint"`) if you are using ES2015 (ES6), ES2016 (ES7) or ES2017 (ES8).
+>
+> ESLint actually supports ES2015/ES2016/ES2017, JSX, and object rest/spread by default now.
+>
+> At the moment, you'll need it if you use stuff like class properties, decorators, async/await, types.
+
+**For browser environment without ES6/ES7/ES8 to ES5 transpiler:**
+
+Create an additional `.stylelintrc` file in a client-side code folder (e.g. `client/.eslintrc`) with the following settings:
+
+```javascript
+{
+    "env": {
+        "browser": true,
+        "es6": false
+    },
+    "globals": {
+        "GLOBAL1": false,
+        "GLOBAL2": false
+    },
+    "rules": {
+        // Disable es6-related rules for es5 environment
+        // (TODO: check if this can be done in more generic way)
+        "object-shorthand": 0,
+        "prefer-arrow-callback": 0,
+        "prefer-template": 0,
+        "prefer-spread": 0,
+        "prefer-rest-params": 0
     }
 }
 ```
@@ -52,11 +87,11 @@ If you haven’t already set up ESLint on your project, run:
 
     npm install eslint --save-dev
 
-Add "eslint" to "scripts" in `package.json` (wrap globstar pattern with single quotes):
+Add "eslint" to "scripts" in `package.json`:
 
 ```json
 "scripts": {
-    "eslint": "eslint js tests *.js --ignore-pattern 'js/vendor/**/*.js'"
+    "eslint": "eslint app tests *.js --ext .js --ext .jsx --ignore-pattern 'js/vendor'"
 }
 ```
 
