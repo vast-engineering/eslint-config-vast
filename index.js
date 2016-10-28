@@ -96,7 +96,7 @@ module.exports = {
         'object-curly-spacing': [2, 'always'],
         'one-var': [2, 'never'],
         'one-var-declaration-per-line': 2,
-        'padded-blocks': [2, 'never'], // TODO: Add padding after blocks once `requirePaddingNewLinesAfterBlocks` gets implemented: https://github.com/eslint/eslint/issues/7356
+        'padded-blocks': [2, 'never'], // TODO: add `requirePaddingNewLinesAfterBlocks` once it's implemented https://github.com/eslint/eslint/issues/7356
         'quote-props': [2, 'as-needed'],
         quotes: [2, 'single'],
         semi: 2,
@@ -107,9 +107,28 @@ module.exports = {
         'space-infix-ops': 2,
         'space-unary-ops': [2, { words: true, nonwords: false }],
         'spaced-comment': 2,
-        'wrap-iife': 2
+        'wrap-iife': 2,
 
-        // ECMAScript 6
-        // TODO: set rules for ECMAScript 6 http://eslint.org/docs/rules/#ecmascript-6
+        // ECMAScript 6 (TODO: switch all rules to "error" after some time, only warn for now)
+        'arrow-body-style': 1,
+        'arrow-parens': [1, 'as-needed', { requireForBlockBody: true }],
+        'arrow-spacing': 1,
+        'generator-star-spacing': [1, { before: false, after: true }],
+        'no-confusing-arrow': [1, { allowParens: true }],
+        'no-duplicate-imports': [1, { includeExports: true }],
+        'no-useless-computed-key': 1,
+        'no-useless-constructor': 1,
+        'no-useless-rename': 1,
+        'no-var': 1,
+        'object-shorthand': [1, 'always', { ignoreConstructors: false, avoidQuotes: true }],
+        'prefer-arrow-callback': 1,
+        'prefer-const': [1, { destructuring: 'any', ignoreReadBeforeAssign: true }],
+        'prefer-rest-params': 1,
+        'prefer-spread': 1,
+        'prefer-template': 1,
+        'rest-spread-spacing': 1,
+        'symbol-description': 1,
+        'template-curly-spacing': 1,
+        'yield-star-spacing': 1
     }
 };
