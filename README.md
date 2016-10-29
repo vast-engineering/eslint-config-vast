@@ -42,9 +42,6 @@ Create an additional `.stylelintrc` file in a client-side code folder (e.g. `cli
     "globals": {
         "GLOBAL1": false,
         "GLOBAL2": false
-    },
-    "rules": {
-        // Your overrides...
     }
 }
 ```
