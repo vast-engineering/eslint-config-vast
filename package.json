@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-vast",
-  "version": "1.6.1",
+  "version": "1.6.2",
   "description": "ESLint shareable config for Vast's JavaScript coding standards",
   "main": "index.js",
   "scripts": {
