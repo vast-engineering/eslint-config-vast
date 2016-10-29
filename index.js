@@ -114,7 +114,7 @@ module.exports = {
 
         // ECMAScript 6 (TODO: switch all rules to "error" after some time, only warn for now)
         'arrow-body-style': 1,
-        'arrow-parens': 1, // TODO: maybe change to [1, 'as-needed', { requireForBlockBody: true }] ?
+        'arrow-parens': [1, 'as-needed', { requireForBlockBody: true }],
         'arrow-spacing': 1,
         'generator-star-spacing': [1, { before: false, after: true }],
         'no-confusing-arrow': [1, { allowParens: true }],
