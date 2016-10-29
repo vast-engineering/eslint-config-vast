@@ -21,6 +21,7 @@ module.exports = {
         'no-console': [1, { allow: ['warn', 'error'] }], // overrides eslint:recommended config (2)
 
         // Best Practices
+        'class-methods-use-this': 2,
         eqeqeq: 2,
         'guard-for-in': 2,
         'no-caller': 2,
