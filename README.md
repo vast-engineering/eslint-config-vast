@@ -5,7 +5,7 @@
 
 This config can be used for linting server-side and client-side JavaScript.
 
-See [eslint-config-vast-react](https://github.com/vast-engineering/eslint-config-vast-react) for some additional useful checks for React, JSX, and accessibility.
+If you are using React, extend this config with [eslint-config-vast-react](https://github.com/vast-engineering/eslint-config-vast-react) to add support for React's specific JSX syntax, and to add additional checks for React, JSX, and accessibility.
 
 ## Installation
 
@@ -71,7 +71,6 @@ Create an additional `.stylelintrc` file in a client-side code folder (e.g. `cli
     },
     "rules": {
         // Disable es6-related rules for es5 environment
-        // (TODO: check if this can be done in more generic way)
         "object-shorthand": 0,
         "prefer-arrow-callback": 0,
         "prefer-template": 0,
@@ -120,11 +119,12 @@ To add a Git pre-commit hook for ESLint, run:
 ## Related
 
 - [eslint-config-vast-react](https://github.com/vast-engineering/eslint-config-vast-react) for React
+
+## Other configs
+
 - [eslint-config-standard](https://github.com/feross/eslint-config-standard) for [JavaScript Standard Style Guide](https://github.com/feross/standard)
-- [eslint-config-airbnb-base](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base)
-  - [eslint-config-airbnb](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb) for React
-- [eslint-config-xo](https://github.com/sindresorhus/eslint-config-xo/) for [XO](https://github.com/sindresorhus/xo) (ESLint-based linter)
-  - [eslint-config-xo-react](https://github.com/sindresorhus/eslint-config-xo-react) for React
+- [eslint-config-airbnb-base](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base) for [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
+- [eslint-config-xo](https://github.com/sindresorhus/eslint-config-xo/) for [XO](https://github.com/sindresorhus/xo) ESLint-based linter
 
 ## License
 
