@@ -26,10 +26,10 @@
   },
   "homepage": "https://github.com/vast-engineering/eslint-config-vast#readme",
   "devDependencies": {
-    "eslint": "3.9.0",
-    "pre-commit": "1.1.3"
+    "eslint": "^3.9.0",
+    "pre-commit": "^1.1.3"
   },
   "peerDependencies": {
-    "eslint": ">=3.9.0"
+    "eslint": "^3.9.0"
   }
 }
