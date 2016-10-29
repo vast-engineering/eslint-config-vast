@@ -75,6 +75,7 @@ module.exports = {
         'eol-last': 2,
         'key-spacing': 2,
         'keyword-spacing': 2,
+        'lines-around-directive': 2,
         'max-nested-callbacks': [1, { max: 4 }],
         'max-statements-per-line': [2, { max: 1 }],
         'new-cap': 2,
