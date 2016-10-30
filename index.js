@@ -22,6 +22,8 @@ module.exports = {
 
         // Best Practices
         'class-methods-use-this': 2,
+        curly: 2,
+        'dot-notation': 2,
         eqeqeq: 2,
         'guard-for-in': 2,
         'no-caller': 2,
@@ -69,10 +71,9 @@ module.exports = {
         'comma-spacing': 2,
         'comma-style': 2,
         'consistent-this': 2,
-        curly: 2,
-        'dot-notation': 2,
-        indent: [2, 4, { SwitchCase: 1 }],
         'eol-last': 2,
+        indent: [2, 4, { SwitchCase: 1 }],
+        'jsx-quotes': 2,
         'key-spacing': 2,
         'keyword-spacing': 2,
         'lines-around-directive': 2,
