@@ -83,17 +83,18 @@ If you haven’t already set up ESLint on your project, run:
 
     npm install eslint --save-dev
 
-Add "eslint" to "scripts" in `package.json`:
+Add scripts to `package.json` (remember to change paths):
 
 ```json
 "scripts": {
-    "eslint": "eslint app tests *.js --ext .js --ext .jsx --ignore-pattern 'js/vendor'"
+    "lint:js": "eslint app tests *.js --ext .js --ext .jsx --ignore-pattern 'js/vendor'",
+    "lint:js:fix": "npm run eslint -- --fix",
 }
 ```
 
-...and then you can run:
+Run `npm run lint:js` to lint the code.
 
-    npm run eslint
+Run `npm run lint:js:fix` to [automatically fix](http://eslint.org/docs/user-guide/command-line-interface#fix) as many issues as possible. Another way to autoformat the code is with the editor plugin, such as [ESLint-Formatter](https://packagecontrol.io/packages/ESLint-Formatter) for Sublime Text.
 
 To add a Git pre-commit hook for ESLint, run:
 
@@ -107,11 +108,9 @@ To add a Git pre-commit hook for ESLint, run:
 ]
 ```
 
-**Tip:** For real-time linting in your text editor, see [ESLint integrations for editors](http://eslint.org/docs/user-guide/integrations#editors).
+**Tip:** For real-time linting in your text editor, see [ESLint integrations for editors](http://eslint.org/docs/user-guide/integrations#editors). In order to use this config in editor, you'll have to install ESLint and all dependencies globally (with `-g` flag).
 
-**Tip:** Run `eslint --fix /path/to/file.js` to [automatically fix](http://eslint.org/docs/user-guide/command-line-interface#fix) as many issues as possible. Another way to autoformat the code is with the editor plugin, such as [ESLint-Formatter](https://packagecontrol.io/packages/ESLint-Formatter) for Sublime Text.
-
-**Tip:** You can create a personal configuration file in your home directory (`~/.eslintrc`), it will only be used if no other configuration files are found. See [Configuration Cascading and Hierarchy](http://eslint.org/docs/user-guide/configuring#configuration-cascading-and-hierarchy). But make sure to all install dependencies globally with `-g` flag.
+**Tip:** You can create a personal configuration file in your home directory (`~/.eslintrc`), it will only be used if no other configuration files are found. See [Configuration Cascading and Hierarchy](http://eslint.org/docs/user-guide/configuring#configuration-cascading-and-hierarchy).
 
 ## Related
 
