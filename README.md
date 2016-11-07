@@ -28,7 +28,7 @@ Create `.eslintrc` file in the root of your project with the following settings:
 
 **For browser environment with ES6/ES7/ES8 to ES5 transpiler:**
 
-Create an additional `.stylelintrc` file in a client-side code folder (e.g. `client/.eslintrc`) with the following settings:
+Create an additional `.eslintrc` file in a client-side code folder (e.g. `client/.eslintrc`) with the following settings:
 
 ```javascript
 {
@@ -54,7 +54,7 @@ Create an additional `.stylelintrc` file in a client-side code folder (e.g. `cli
 
 **For browser environment without ES6/ES7/ES8 to ES5 transpiler:**
 
-Create an additional `.stylelintrc` file in a client-side code folder (e.g. `client/.eslintrc`) with the following settings:
+Create an additional `.eslintrc` file in a client-side code folder (e.g. `client/.eslintrc`) with the following settings:
 
 ```javascript
 {
