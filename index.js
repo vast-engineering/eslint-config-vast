@@ -125,7 +125,7 @@ module.exports = {
         'no-useless-constructor': 1,
         'no-useless-rename': 1,
         'no-var': 1,
-        'object-shorthand': [1, 'always', { ignoreConstructors: false, avoidQuotes: true }],
+        'object-shorthand': [1, 'consistent-as-needed'],
         'prefer-arrow-callback': 1,
         'prefer-const': [1, { destructuring: 'any', ignoreReadBeforeAssign: true }],
         'prefer-rest-params': 1,
