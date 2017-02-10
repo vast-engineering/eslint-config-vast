@@ -112,9 +112,10 @@ module.exports = {
         'space-infix-ops': 2,
         'space-unary-ops': [2, { words: true, nonwords: false }],
         'spaced-comment': 2,
+        'template-tag-spacing': [2, 'always'],
         'wrap-iife': 2,
 
-        // ECMAScript 6 (TODO: switch all rules to "error" after some time, only warn for now)
+        // ECMAScript 6 (only warn for now)
         'arrow-body-style': 1,
         'arrow-parens': [1, 'as-needed', { requireForBlockBody: true }],
         'arrow-spacing': 1,
