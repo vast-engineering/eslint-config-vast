@@ -47,6 +47,7 @@ module.exports = {
         'no-useless-return': 2,
         'no-return-await': 2,
         'no-void': 2,
+        'require-await': 2,
         yoda: 2,
 
         // Strict Mode
