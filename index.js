@@ -22,7 +22,7 @@ module.exports = {
         'no-await-in-loop': 2, // In case await was used in a loop intentionally, it is recommended to disable the rule via a standard ESLint disable comment.
 
         // Best Practices
-        'class-methods-use-this': 2,
+        'class-methods-use-this': 1,
         curly: 2,
         'dot-notation': 2,
         eqeqeq: 2,
