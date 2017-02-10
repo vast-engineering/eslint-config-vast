@@ -18,7 +18,8 @@ module.exports = {
     extends: 'eslint:recommended',
     rules: {
         // Possible Errors
-        'no-console': [1, { allow: ['warn', 'error'] }], // overrides eslint:recommended config (2)
+        'no-console': [1, { allow: ['warn', 'error'] }], // Overrides eslint:recommended config (2).
+        'no-await-in-loop': 2, // In case await was used in a loop intentionally, it is recommended to disable the rule via a standard ESLint disable comment.
 
         // Best Practices
         'class-methods-use-this': 2,
