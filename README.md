@@ -46,12 +46,6 @@ Create an additional `.eslintrc` file in a client-side code folder (e.g. `client
 }
 ```
 
-> **Note:** You don't need to use babel-eslint (`"parser": "babel-eslint"`) if you are using ES2015 (ES6), ES2016 (ES7) or ES2017 (ES8).
->
-> ESLint actually supports ES2015/ES2016/ES2017, JSX, and object rest/spread by default now.
->
-> At the moment, you'll need it if you use stuff like class properties, decorators, async/await, types.
-
 **For browser environment without ES6/ES7/ES8 to ES5 transpiler:**
 
 Create an additional `.eslintrc` file in a client-side code folder (e.g. `client/.eslintrc`) with the following settings:
